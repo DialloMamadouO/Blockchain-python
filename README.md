@@ -21,7 +21,7 @@ Numderive (--numderive) to set number of child keys generated
 Set the --format=json flag, then parse the output into a JSON object using json.loads(output)
 Then, we will wrap all of this into one function, called derive_wallets and create an object called coins that derives ETH and BTCTEST wallets with this function.
 
-## Linhing the transaction signing libraries
+## Linking the transaction signing libraries
 Now, we will leverage the keys we've got in the coins object using bit and web3.py and create three more functions:
 -priv_key_to_account -- this will convert the privkey string in a child key to an account object
 that bit or web3.py can use to transact.
